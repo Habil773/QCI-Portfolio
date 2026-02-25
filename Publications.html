@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Quality Circle Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .pub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pub-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .pub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pub-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar with social links - EXACT same as homepage -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Lahore / Karachi / Global</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-podcast"></i></a>
+                <a href="#"><i class="fas fa-meme"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header / navigation - EXACT same as homepage -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png" alt="QCI Logo" style="height: 50px; width: auto;">
+                <div>
+                    <h1>QCI</h1>
+                    <div class="tagline">Quality Circle Institute</div>
+                </div>      </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="trainings.html">Trainings</a>
+                <a href="products.html">Products</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html" class="btn-outline">Jobs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Publications & Research</h2>
+            <p>Books • Journals • Case Studies • Reports</p>
+        </div>
+    </div>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="pub-grid">
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-book"></i></div>
+                    <h4>Books</h4>
+                    <ul>
+                        <li>"Process Improvement Handbook" (2025)</li>
+                        <li>"Lean Six Sigma for SMEs" (2024)</li>
+                        <li>"Supply Chain Analytics" (2025)</li>
+                        <li>"Quality Circles 4.0" (2026)</li>
+                    </ul>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Journal Papers</h4>
+                    <ul>
+                        <li>Quality Circles in Textile Industry (IJQRM)</li>
+                        <li>ISO 9001:2025 readiness in Pakistan</li>
+                        <li>AI in Inventory Control (Supply Chain Journal)</li>
+                        <li>Six Sigma in Healthcare (TQM Journal)</li>
+                    </ul>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>Case Studies</h4>
+                    <ul>
+                        <li>PepsiCo Lays: TPM Implementation</li>
+                        <li>Fast Cables: Lean Transformation</li>
+                        <li>TetraPack: Sustainability Journey</li>
+                        <li>Service Industries: Quality Circles</li>
+                    </ul>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-newspaper"></i></div>
+                    <h4>Magazine Articles</h4>
+                    <ul>
+                        <li>Monthly column in "Quality Today"</li>
+                        <li>Supply Chain Trends 2026</li>
+                        <li>The future of ISO standards</li>
+                    </ul>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h4>Conference Papers</h4>
+                    <ul>
+                        <li>ICQEM 2025: Quality 4.0</li>
+                        <li>Logistics Forum Dubai 2025</li>
+                        <li>Six Sigma Global Summit 2026</li>
+                    </ul>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4>Research Reports</h4>
+                    <ul>
+                        <li>Industry 4.0 Readiness Index 2025</li>
+                        <li>Sustainable Logistics Report 2026</li>
+                        <li>Pakistan Manufacturing Survey</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer - EXACT same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>QCI</h5>
+                    <p>Be The Best Through Process Improvement</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 42 111 11 1111</p>
+                </div>
+                <div>
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Consultancy</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="products.html">IT Products</a></li>
+                        <li><a href="services.html">AI Courses</a></li>
+                        <li><a href="services.html">Business Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Connect</h5>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-podcast"></i></a>
+                    </div>
+                    <p style="margin-top:1rem;">RSS, Reels, Memes, Podcasts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Circle Institute – Consulting & Training Firm. All rights reserved. | Project
+                    portfolio – professional website</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Quality Circle Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 30px rgba(196, 69, 54, 0.15);
+            border-color: var(--accent);
+            background: linear-gradient(145deg, white, #fff5f2);
+        }
+
+        .team-avatar {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .team-card:hover .team-avatar {
+            transform: scale(1.1);
+            color: var(--primary);
+        }
+
+        .team-card h4 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .team-title {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .team-desc {
+            font-size: 0.9rem;
+            color: var(--gray);
+            border-top: 1px dashed var(--border);
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .team-social {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .team-card:hover .team-social {
+            opacity: 1;
+        }
+
+        .team-social a {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .team-social a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar with social links - EXACT same as homepage -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Lahore / Karachi / Global</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-podcast"></i></a>
+                <a href="#"><i class="fas fa-meme"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header / navigation - EXACT same as homepage -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png" alt="QCI Logo" style="height: 50px; width: auto;">
+                <div>
+                    <h1>QCI</h1>
+                    <div class="tagline">Quality Circle Institute</div>
+                </div>      </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="trainings.html">Trainings</a>
+                <a href="products.html">Products</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html" class="btn-outline">Jobs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Leadership & Consultants</h2>
+            <p>Meet our experienced team of experts</p>
+        </div>
+    </div>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Ahmad Raza</h4>
+                    <div class="team-title">CEO & Senior Consultant</div>
+                    <div class="team-desc">25+ years in quality management, ISO lead auditor, Six Sigma Master Black
+                        Belt.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Fatima Khan</h4>
+                    <div class="team-title">Director Trainings</div>
+                    <div class="team-desc">Expert in instructional design, certified trainer for Six Sigma and lean.
+                    </div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Usman Chaudhry</h4>
+                    <div class="team-title">Lead Auditor</div>
+                    <div class="team-desc">IRCA certified, 500+ audits conducted across ISO 9001, 14001, 45001.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Sana Malik</h4>
+                    <div class="team-title">Supply Chain Expert</div>
+                    <div class="team-desc">PhD in Logistics, specialist in supplier development and analytics.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Omar Farooq</h4>
+                    <div class="team-title">IT Products Manager</div>
+                    <div class="team-desc">ERP implementation, app development, AI solutions architect.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Zara Tariq</h4>
+                    <div class="team-title">Research Lead</div>
+                    <div class="team-desc">Published author, case study developer, conference speaker.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-circle"></i></div>
+                    <h4>Imran Ali</h4>
+                    <div class="team-title">Quality Circles Coach</div>
+                    <div class="team-desc">Pioneer in innovative kaizen circles, trained 200+ facilitators.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-group"></i></div>
+                    <h4>+18 Senior Associates</h4>
+                    <div class="team-title">Global Network</div>
+                    <div class="team-desc">Specialists in sustainability, AI, logistics, and quality across 12
+                        countries.</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer - EXACT same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>QCI</h5>
+                    <p>Be The Best Through Process Improvement</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 42 111 11 1111</p>
+                </div>
+                <div>
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Consultancy</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="products.html">IT Products</a></li>
+                        <li><a href="services.html">AI Courses</a></li>
+                        <li><a href="services.html">Business Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Connect</h5>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-podcast"></i></a>
+                    </div>
+                    <p style="margin-top:1rem;">RSS, Reels, Memes, Podcasts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Circle Institute – Consulting & Training Firm. All rights reserved. | Project
+                    portfolio – professional website</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

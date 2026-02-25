@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Quality Circle Institute</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional page-specific styling */
+        .page-header {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .page-header h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 0.3rem 0;
+            border-bottom: 1px dotted var(--border);
+        }
+
+        .service-card li:before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar with social links - EXACT same as homepage -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Lahore / Karachi / Global</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-podcast"></i></a>
+                <a href="#"><i class="fas fa-meme"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header / navigation - EXACT same as homepage -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png" alt="QCI Logo" style="height: 50px; width: auto;">
+                <div>
+                    <h1>QCI</h1>
+                    <div class="tagline">Quality Circle Institute</div>
+                </div>      </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="trainings.html">Trainings</a>
+                <a href="products.html">Products</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html" class="btn-outline">Jobs</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- page header -->
+    <div class="page-header">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Comprehensive solutions for business excellence</p>
+        </div>
+    </div>
+
+    <!-- services content -->
+    <section class="section-light">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h4>Consultancy</h4>
+                    <ul>
+                        <li>ISO Systems Implementation</li>
+                        <li>Supply Chain Auditing</li>
+                        <li>Quality Circles Formation</li>
+                        <li>Gap Analysis & Assessments</li>
+                        <li>Supplier Assessment Audits</li>
+                        <li>Documentation for Certifications</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Digital Services</h4>
+                    <ul>
+                        <li>Web Development & Maintenance</li>
+                        <li>Shopify Support</li>
+                        <li>Digital Marketing (FB, LinkedIn, TikTok, Reels)</li>
+                        <li>AI Courses & Training</li>
+                        <li>SEO & Social Media Management</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Business Operations</h4>
+                    <ul>
+                        <li>Production Planning & Control</li>
+                        <li>Inventory Management</li>
+                        <li>Business Analytics</li>
+                        <li>Modelling Business Dynamics</li>
+                        <li>Lean Manufacturing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certification Support</h4>
+                    <ul>
+                        <li>ISO 9001, 14001, 22001, 27001</li>
+                        <li>SA 8001, ISO 17025</li>
+                        <li>Documentation & Follow-ups</li>
+                        <li>Maintenance Plans</li>
+                        <li>Internal Auditing Training</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dice-d6"></i>
+                    <h4>Business Simulation Games</h4>
+                    <ul>
+                        <li>Lean Manufacturing Sim</li>
+                        <li>Supply Chain Challenge</li>
+                        <li>Quality Circles Interactive</li>
+                        <li>Inventory Management Game</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>AI & Patents</h4>
+                    <ul>
+                        <li>AI Training Programs</li>
+                        <li>Patent Filing Assistance</li>
+                        <li>AI Quality Analytics</li>
+                        <li>Machine Learning Workshops</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h4>Maintenance Services</h4>
+                    <ul>
+                        <li>Quality Management follow-up</li>
+                        <li>Supply Chain Audits maintenance</li>
+                        <li>Inventory Systems upkeep</li>
+                        <li>Digital Marketing maintenance</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Supply Chain</h4>
+                    <ul>
+                        <li>Integrated SCM</li>
+                        <li>Supplier Quality Engineering</li>
+                        <li>Logistics & Reverse Logistics</li>
+                        <li>Warehouse Management</li>
+                        <li>Supply Chain Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer - EXACT same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>QCI</h5>
+                    <p>Be The Best Through Process Improvement</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 42 111 11 1111</p>
+                </div>
+                <div>
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Consultancy</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="products.html">IT Products</a></li>
+                        <li><a href="services.html">AI Courses</a></li>
+                        <li><a href="services.html">Business Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Connect</h5>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-podcast"></i></a>
+                    </div>
+                    <p style="margin-top:1rem;">RSS, Reels, Memes, Podcasts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Circle Institute – Consulting & Training Firm. All rights reserved. | Project
+                    portfolio – professional website</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

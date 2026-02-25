@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Quality Circle Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-info {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar with social links - EXACT same as homepage -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Lahore / Karachi / Global</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-podcast"></i></a>
+                <a href="#"><i class="fas fa-meme"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header / navigation - EXACT same as homepage -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png" alt="QCI Logo" style="height: 50px; width: auto;">
+                <div>
+                    <h1>QCI</h1>
+                    <div class="tagline">Quality Circle Institute</div>
+                </div>      </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="trainings.html">Trainings</a>
+                <a href="products.html">Products</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html" class="btn-outline">Jobs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Contact & Support</h2>
+            <p>We're here to help</p>
+        </div>
+    </div>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h4 style="color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-address-card"></i> Get in
+                        touch</h4>
+                    <p><i class="fas fa-map-marker-alt" style="color:var(--accent); width: 2rem;"></i> 42-B, Main
+                        Boulevard, Lahore, Pakistan</p>
+                    <p><i class="fas fa-phone" style="color:var(--accent); width: 2rem;"></i> +92 42 111 11 1111</p>
+                    <p><i class="fas fa-envelope" style="color:var(--accent); width: 2rem;"></i> info@qci.edu.pk</p>
+                    <p><i class="fab fa-whatsapp" style="color:var(--accent); width: 2rem;"></i> +92 300 123 4567</p>
+                    <p><i class="fas fa-globe" style="color:var(--accent); width: 2rem;"></i> www.qci-institute.com</p>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.0000000000005!2d74.00000000000001!3d31.000000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDAwJzAwLjAiTiA3NMKwMDAnMDAuMCJF!5e0!3m2!1sen!2s!4v0000000000000"
+                            width="100%" height="200" style="border:0; border-radius:16px;" allowfullscreen=""
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h4 style="color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-paper-plane"></i> Send
+                        inquiry</h4>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Email Address">
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your message" rows="5"></textarea>
+                        <button class="btn-primary" style="border: none; cursor: pointer;">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer - EXACT same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>QCI</h5>
+                    <p>Be The Best Through Process Improvement</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 42 111 11 1111</p>
+                </div>
+                <div>
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Consultancy</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="products.html">IT Products</a></li>
+                        <li><a href="services.html">AI Courses</a></li>
+                        <li><a href="services.html">Business Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Connect</h5>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-podcast"></i></a>
+                    </div>
+                    <p style="margin-top:1rem;">RSS, Reels, Memes, Podcasts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Circle Institute – Consulting & Training Firm. All rights reserved. | Project
+                    portfolio – professional website</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

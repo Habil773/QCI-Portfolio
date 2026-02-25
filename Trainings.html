@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainings - Quality Circle Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: var(--accent);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .training-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .training-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
+        }
+
+        .training-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .training-card h4 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .training-card ul {
+            list-style: none;
+        }
+
+        .training-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dotted var(--border);
+        }
+
+        .training-card li:before {
+            content: "▹";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .badge-training {
+            background: var(--light);
+            color: var(--primary);
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar with social links - EXACT same as homepage -->
+    <div class="top-bar">
+        <div class="container">
+            <div><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Lahore / Karachi / Global</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-podcast"></i></a>
+                <a href="#"><i class="fas fa-meme"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header / navigation - EXACT same as homepage -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png" alt="QCI Logo" style="height: 50px; width: auto;">
+                <div>
+                    <h1>QCI</h1>
+                    <div class="tagline">Quality Circle Institute</div>
+                </div>      </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="trainings.html">Trainings</a>
+                <a href="products.html">Products</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html" class="btn-outline">Jobs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Trainings & Diplomas</h2>
+            <p>Professional development for individuals and teams</p>
+        </div>
+    </div>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="training-grid">
+                <div class="training-card">
+                    <i class="fas fa-door-open"></i>
+                    <h4>Open Enrollment</h4>
+                    <ul>
+                        <li>Production Management</li>
+                        <li>Quality Management</li>
+                        <li>Supply Chain Fundamentals</li>
+                        <li>Marketing & Sales Excellence</li>
+                        <li>Project Management Professional</li>
+                        <li>System Dynamics</li>
+                        <li>Sustainability Strategies</li>
+                    </ul>
+                    <span class="badge-training">Monthly intake</span>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-cog"></i>
+                    <h4>Customized (In-company)</h4>
+                    <ul>
+                        <li>Effective Production Techniques</li>
+                        <li>Statistical Tools Application</li>
+                        <li>Innovative Quality Circles</li>
+                        <li>Manufacturing Excellence</li>
+                        <li>Leadership & Supervisory Skills</li>
+                        <li>Total Productive Maintenance</li>
+                    </ul>
+                    <span class="badge-training">Tailored to your industry</span>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-hiking"></i>
+                    <h4>Outbound Trainings</h4>
+                    <ul>
+                        <li>Backpack Leadership Program</li>
+                        <li>Strategic Management Retreats</li>
+                        <li>Team Building Expeditions</li>
+                        <li>Wilderness Decision Making</li>
+                    </ul>
+                    <span class="badge-training">Experiential learning</span>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Professional Diplomas</h4>
+                    <ul>
+                        <li>Integrated Production Management</li>
+                        <li>Inventory & Warehouse Management</li>
+                        <li>Sustainable Supply Chain & Logistics</li>
+                        <li>Certified Diploma in QMS</li>
+                        <li>Six Sigma Green Belt</li>
+                        <li>Six Sigma Black Belt</li>
+                        <li>System Dynamics</li>
+                    </ul>
+                    <span class="badge-training">Accredited</span>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-laptop"></i>
+                    <h4>Online Short Courses (3-4h)</h4>
+                    <ul>
+                        <li>Integrated Production Management</li>
+                        <li>Inventory & Warehouse Excellence</li>
+                        <li>Supplier Quality Engineering</li>
+                        <li>Innovative Kaizen Circles</li>
+                        <li>Quality Analytics</li>
+                        <li>Process Capability</li>
+                    </ul>
+                    <span class="badge-training">Self-paced</span>
+                </div>
+                <div class="training-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certificate Courses</h4>
+                    <ul>
+                        <li>Internal Quality Auditing</li>
+                        <li>Quality Function Deployment</li>
+                        <li>Cost of Quality</li>
+                        <li>5S Housekeeping</li>
+                        <li>Supplier Development Management</li>
+                        <li>Negotiation & Contract Management</li>
+                    </ul>
+                    <span class="badge-training">CPD accredited</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer - EXACT same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>QCI</h5>
+                    <p>Be The Best Through Process Improvement</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 42 111 11 1111</p>
+                </div>
+                <div>
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Consultancy</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="products.html">IT Products</a></li>
+                        <li><a href="services.html">AI Courses</a></li>
+                        <li><a href="services.html">Business Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Connect</h5>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-podcast"></i></a>
+                    </div>
+                    <p style="margin-top:1rem;">RSS, Reels, Memes, Podcasts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Circle Institute – Consulting & Training Firm. All rights reserved. | Project
+                    portfolio – professional website</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
